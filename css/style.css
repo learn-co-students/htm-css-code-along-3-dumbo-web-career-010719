@@ -1,0 +1,68 @@
+/* google fonts: Major Mono Display and Raleway */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+/*
+CSS Syntax
+----------
+selector {
+  property: value;
+  property: value;
+}
+*/
+
+/*Type Selector:*/
+p {
+  font-size: 16px; /* 16px ?pt 100%, 1em (1em = 16px)*/
+  line-height: 1.5em; /* vertical space between sentences */
+}
+
+figcaption {
+  /*font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman"*/
+  font: normal 0.75/1.5em 'Raleway', sans-serif;
+  color: #777777; /* or #777 */
+  text-align: right;
+}
+
+/* .class selector */
+.milk-text {
+  font: bold 2.6em 'Raleway', sans-serif;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+  /*  horiz offset - vert offset - blurred radius - color */
+}
+
+/* ID selector */
+#logo {
+  background: #154090;
+}
+
+/* Descendent selector */
+#logo h1 {
+  font: bold 2.6em 'Major Mono Display', monospace;
+  color: white;
+}
+
+#logo h2 {
+  font-family: 'Major Mono Display', monospace;
+  color: white;
+}
+
+/* sudo class selector */
+/* a relationship with other elements based on event states */
+#details a:link, #details a:visited {  /* all a tags descending from id="details" */
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+}
